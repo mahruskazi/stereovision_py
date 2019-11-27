@@ -1,0 +1,4 @@
+StereoVision==1.0.4
+numpy==1.17.2
+matplotlib==3.1.1
+opencv-python==4.1.1.26

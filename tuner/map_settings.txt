@@ -1,0 +1,11 @@
+{
+    "SADWindowSize":5,
+    "minDisparity":14,
+    "numberOfDisparities":160,
+    "preFilterCap":27,
+    "preFilterSize":5,
+    "speckleRange":19,
+    "speckleWindowSize":88,
+    "textureThreshold":100,
+    "uniquenessRatio":6
+}
