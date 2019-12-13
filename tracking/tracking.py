@@ -117,7 +117,12 @@ class Tracking:
         print ('Parameters loaded from file '+fName)
 
     def get_distance(self, depth_map):
-        return -0.00185*depth_map[self.py][self.px] + 152.7238
+        # Slope and y_shift is created by plotting values for objects at different
+        # distances and finding the line of best fit
+        # print(depth_map[self.py][self.px]) # Uncomment to help tune values
+        slope = -0.00185
+        y_shift = 152.7238
+        return slope*depth_map[self.py][self.px] + y_shift
 
     def track_object(self, orb, img_object, img_scene):
         keypoints_obj, descriptors_obj = orb.detectAndCompute(img_object, None)
